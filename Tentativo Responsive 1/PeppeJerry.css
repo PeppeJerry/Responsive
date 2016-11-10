@@ -1,0 +1,59 @@
+body{
+	width:auto;
+	height:auto;
+}
+
+.NB {
+    list-style-type: none;
+    margin:0px;
+    padding:0px;
+    overflow: hidden;
+    background-color:#0000cc;
+}
+
+.element {
+    float: left;
+}
+
+.element a {
+    color:#80d4ff;
+    text-align: center;
+    padding:15px;
+    text-decoration: none;
+}
+
+.element a:hover {
+    background-color:#80d4ff;
+	color:#0000cc;
+}
+
+@media screen and (min-width:500px){
+	
+	.element a{
+		display: block;
+	}
+	
+	.button{
+		float:right;
+		display:none;
+	}
+}
+
+@media screen and (max-width:500px){
+	.element a{
+		display:none;
+	}
+	
+	.button{
+		float:right;
+		display:block;
+	}
+}
+
+.button img:hover{
+	cursor:pointer;
+}
+
+.button img:active{
+	cursor:wait;
+}
