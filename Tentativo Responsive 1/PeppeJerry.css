@@ -1,6 +1,6 @@
-body{
-	width:auto;
-	height:auto;
+*{
+margin: 0;
+padding: 0;
 }
 
 .NB {
@@ -9,10 +9,6 @@ body{
     padding:0px;
     overflow: hidden;
     background-color:#0000cc;
-}
-
-.element {
-    float: left;
 }
 
 .element a {
@@ -27,33 +23,65 @@ body{
 	color:#0000cc;
 }
 
+.hidden a{
+	cursor:default;
+}
+
+
 @media screen and (min-width:500px){
 	
 	.element a{
 		display: block;
 	}
 	
+	.element {
+    float:left;
+	}
+	
 	.button{
 		float:right;
 		display:none;
 	}
+		.hidden a{
+	display:none;
+		}
+		
+	.NCN{
+		display:block;
+	}
+	.NCY{
+		display:block;
+	}
+}
+
+.hidden a{
+	color:#0000cc;
+}
+
+.hidden a:hover{
+	background-color:#0000cc;
 }
 
 @media screen and (max-width:500px){
-	.element a{
+	
+	.NCN{
 		display:none;
+	}
+	.element a{
+		display:block;
+	}
+
+	.element {
+		float:none;
 	}
 	
 	.button{
 		float:right;
 		display:block;
 	}
+	
 }
 
 .button img:hover{
 	cursor:pointer;
-}
-
-.button img:active{
-	cursor:wait;
 }
